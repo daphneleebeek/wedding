@@ -1,0 +1,18 @@
+
+.homeContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ewoudandmonicaIMG{
+    width: 50%; height: 50%;}
+
+@media (max-width: 768px) { /*TABLET Portrait*/
+    .ewoudandmonicaIMG{ width: 75%; height: 75%; }
+}
+
+@media (max-width: 580px) { /*PHONE*/
+    .ewoudandmonicaIMG{ width: 100%; height: 100%; }
+}

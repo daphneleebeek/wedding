@@ -1,0 +1,35 @@
+.languageSelect{
+  width: 130px;
+  font-family: 'Roboto', sans-serif;
+  margin: 15px;
+}
+.Select-control {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+.Select-option.is-selected {
+  background: rgba(221, 221, 221, 0.3);
+  color: rgba(0, 0, 0, 0.95);
+}
+.Select-option.is-focused {
+  background: rgba(221, 221, 221, 0.6);
+  color: rgba(0, 0, 0, 0.95);
+}
+.is-focused:not(.is-open) > .Select-control {
+  border-color: rgba(34, 36, 38, 0.35);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.is-open > .Select-control {
+  border-color: #96c8da;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+}
+.Select-menu-outer {
+  border-color: #96c8da;
+  border-top: none;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+}
+

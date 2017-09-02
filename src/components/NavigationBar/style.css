@@ -1,0 +1,77 @@
+.navBar {
+  background-color: #2a364e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.navBar li {
+  list-style-type: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.navBar li a {
+  outline: none;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 2em;
+}
+.navBarNotCollapsed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+ }
+.navBarNotCollapsed li {
+  padding: 15px 28px;
+}
+.navBarNotCollapsed li a{
+  padding: 10px 20px 10px 20px;
+}
+.navBarNotCollapsed li a:hover{
+  color: #ffffff;
+  border-bottom: solid 5px #ffffff;
+}
+.navBarNotCollapsed .active{
+  color: #ffffff;
+  border-bottom: solid 5px #ffffff;  
+}
+.collapsedList{
+  margin: 15px 0 0 55px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; 
+} 
+.navBarCollapsed li {
+  padding-bottom: 15px;
+}
+.navBarCollapsed li a{
+  padding: 0 12px;;
+}
+@media (max-width: 600px) { /*Phone*/
+  .navBarCollapsed li a { font-size: 1.8em !important; }
+}
+.navBarCollapsed .active{
+  color: #ffffff;
+  border-right: solid 2px #ffffff;
+  border-left: solid 2px #ffffff;  
+}
